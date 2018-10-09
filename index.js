@@ -1,11 +1,5 @@
 import Bot from './bot';
 
-// Configuration env
-require('dotenv').config();
+const bot = new Bot();
 
-const initApp = async () => {
-  const bot = new Bot();
-  await bot.getBotInformation();
-};
-
-initApp();
+bot.init();

@@ -4,7 +4,7 @@
   "description": "Bot to search airing animes resources",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js --exec babel-node",
+    "start": "DEBUG=axios nodemon ./index.js --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Herbert Videla",
@@ -15,10 +15,12 @@
     "@babel/node": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
+    "axios-debug-log": "^0.4.0",
     "nodemon": "^1.18.4"
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "dotenv": "^6.0.0"
+    "dotenv": "^6.0.0",
+    "node-telegram-bot-api": "^0.30.0"
   }
 }
